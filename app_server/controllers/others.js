@@ -6,4 +6,8 @@ module.exports.about = function(req, res){
     res.render('index', {title: 'About Hardcore Parkour'});
 };
 
+module.exports.parkour = function(req, res){
+    res.render('index', {title: 'The Sport of Parkour'});
+};
+
 //

@@ -12,7 +12,8 @@ router.get('/', ctrlLocations.homelist);
 router.get('/location', ctrlLocations.locationInfo);
 router.get('/location/review/new', ctrlLocations.addReview);
 
-/* GET about page */
+/* GET pages for other collections */
 router.get('/about', ctrlOthers.about);
+router.get('/parkour', ctrlOthers.parkour);
 
 module.exports = router;
