@@ -7,7 +7,7 @@ module.exports.about = function(req, res){
 };
 
 module.exports.parkour = function(req, res){
-    res.render('index', {title: 'The Sport of Parkour'});
+    res.render('locations-list', {title: 'The Sport of Parkour'});
 };
 
 //

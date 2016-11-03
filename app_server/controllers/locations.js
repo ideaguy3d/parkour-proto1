@@ -3,11 +3,11 @@
  */
 
 module.exports.homelist = function(req, res){
-    res.render('index', {title: 'Hardcore Parkore Listings'});
+    res.render('index', {title: 'Hardcore Parkore web app'});
 };
 
 module.exports.locationInfo = function(req, res){
-    res.render('index', {title: 'Location info for parkour spots'});
+    res.render('location-info', {title: 'Location info for parkour spots'});
 
 };
 
