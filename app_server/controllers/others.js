@@ -3,7 +3,7 @@
  */
 
 module.exports.about = function(req, res){
-    res.render('index', {title: 'About Hardcore Parkour'});
+    res.render('generic-text', {title: 'About Hardcore Parkour'});
 };
 
 module.exports.parkour = function(req, res){

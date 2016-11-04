@@ -1,9 +1,11 @@
 extends layout
 
+include _includes/sharedHTMLfunctions
+
 block content
     .row.page-header
         .col-lg-12
-            h1 Starcups
+            h1 HardcoreParkore
     <!-- setting up nested responsive columns for the template -->
     .row
         .col-xs-12.col-md-9
@@ -17,3 +19,70 @@ block content
                                 span.glyphicon.glyphicon-star
                                 span.glyphicon.glyphicon-star-empty
                                 span.glyphicon.glyphicon-star-empty
+                            p 1117 s.9th st, San Jose, ca 95112
+                            .panel.panel-info
+                                .panel-heading
+                                    h2.panel-title Good hours to go
+                                .panel-body
+                                    p Monday-Friday 7am-7pm
+                                    p Saturday 5am-12am
+                                    p Sunday 6am-10pm
+                            .panel.panel-info
+                                .panel-heading
+                                    h2.panel-title Features
+                                .panel-body
+                                    span.label.label-default
+                                        span.glyphicon.glyphicon-ok
+                                        | &nbsp; Parallel Walls
+                                    | &nbsp;
+                                    span.label.label-default
+                                        span.glyphicon.glyphicon-ok
+                                        | &nbsp; Epic Gaps
+                                    | &nbsp;
+                                    span.label.label-default
+                                        span.glyphicon.glyphicon-ok
+                                        | &nbsp; Stair Sets
+                                    | &nbsp;
+                                .col-xs-12.col-sm-6.location-map
+                                    .panel.panel-info
+                                        .panel-heading
+                                            h2.panel-title Parkour Location
+                                        .panel-body
+                                            img.img-responsive.img-rounded(src='http://maps.googleapis.com/maps/api/staticmap?center=51.455041,-0.9690884&zoom=17&size=400x350&sensor=false&markers=51.455041,-0.9690884&scale=2')
+                    .row
+                        .col-xs-12
+                            .panel.panel-primary.review-panel
+                                .panel-heading
+                                    a.btn.btn-default.pull-right(href='/location/review/new') Add Review
+                                    h2.panel-title Parkour Practitioner Reviews
+                                .panel-body.review-container
+                                    .row
+                                        .review
+                                            .well.well-sm.review-header
+                                                span.rating
+                                                    span.glyphicon.glyphicon-star
+                                                    span.glyphicon.glyphicon-star
+                                                    span.glyphicon.glyphicon-star
+                                                    span.glyphicon.glyphicon-star
+                                                    span.glyphicon.glyphicon-star-empty
+                                                span.review-author Romulus Augustus
+                                                small.reviewTimestamp Nov 7th 2016
+                                            .col-xs-12
+                                                p This is an excellent place for Phalanx Jumping
+                                    .row
+                                        .review
+                                            .well.well-sm.review-header
+                                                span.rating
+                                                    span.glyphicon.glyphicon-star
+                                                    span.glyphicon.glyphicon-star
+                                                    span.glyphicon.glyphicon-star
+                                                    span.glyphicon.glyphicon-star
+                                                    span.glyphicon.glyphicon-star-empty
+                                                span.review-author Romulus Augustus
+                                                small.reviewTimestamp Nov 4th 2016
+                                            .col-xs-12
+                                                p This is an excellent place for Phalanx Jumping
+                        .col-xs-12.col-md-3
+                            p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti dicta ipsa libero magni omnis pariatur quae quidem repellat rerum. Aliquam ea, explicabo maxime molestiae natus nemo perferendis porro quisquam!
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti dicta ipsa libero magni omnis pariatur quae quidem repellat rerum. Aliquam ea, explicabo maxime molestiae natus nemo perferendis porro quisquam!
+

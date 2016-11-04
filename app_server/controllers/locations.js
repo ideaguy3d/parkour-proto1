@@ -12,7 +12,7 @@ module.exports.locationInfo = function(req, res){
 };
 
 module.exports.addReview = function(req, res){
-    res.render('index', {title: 'Review this parkour location'});
+    res.render('location-review-form', {title: 'Review this parkour location'});
 
 };
 
