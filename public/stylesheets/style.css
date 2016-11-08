@@ -27,6 +27,7 @@ a {
 
 .reviewAuthor {
     margin: 0 5px;
+    color: #434343;
 }
 
 .reviewTimestamp {
@@ -36,4 +37,9 @@ a {
 .panel p {
     color: #434343;
 }
+
+.rating {
+    color: #434343;
+}
+
 
