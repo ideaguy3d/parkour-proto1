@@ -21,12 +21,13 @@ module.exports.locationInfo = function (req, res) {
                 callToAction: 'If you\'ve been to this parkour spot and would like to write what you liked or didn\'t like about this spot... Leave a review !  '
             },
             location: {
-                name: 'HardcoreParkore',
+                name: '-HardcoreParkore-',
                 address: '125 Jump Street, San Jose, ca 95112',
                 rating: 3,
                 facilities: ['Stair Sets', 'Gaps', 'Parallel Walls'],
                 coords: {lat: 37.774929, lng: -122.419416},
-                openingTimes: [{
+                openingTimes: [
+                {
                     days: 'Monday - Friday',
                     opening: '7:00am',
                     closing: '7:00pm',
@@ -40,7 +41,8 @@ module.exports.locationInfo = function (req, res) {
                     days: 'Sunday',
                     closed: true
                 }],
-                reviews: [{
+                reviews: [
+                {
                     author: 'Romulus Augustus',
                     rating: 5,
                     timestamp: '16 July 2013',
