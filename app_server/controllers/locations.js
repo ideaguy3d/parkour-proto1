@@ -12,6 +12,7 @@ module.exports.homelist = function (req, res) {
     });
 };
 
+
 module.exports.locationInfo = function (req, res) {
     res.render('location-info',
         {
@@ -64,5 +65,6 @@ module.exports.addReview = function (req, res) {
     res.render('location-review-form',
         {title: 'Review this parkour location'});
 };
+
 
 //\\
