@@ -10,7 +10,8 @@ module.exports.about = function (req, res) {
 module.exports.parkour = function (req, res) {
     res.render('locations-list', {
         title: 'The Sport of Parkour',
-        pageHeader: {
+        pageHeader:
+        {
             title: 'HardcoreParkore',
             strapline: ' Find locations near you to do some Parkour!'
 

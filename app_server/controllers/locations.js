@@ -13,7 +13,8 @@ module.exports.homelist = function (req, res) {
 };
 
 module.exports.locationInfo = function (req, res) {
-    res.render('location-info', {
+    res.render('location-info',
+        {
             title: 'Location info for parkour spot.',
             pageHeader: {title: 'HardcoreParkore.com'},
             sidebar: {
@@ -47,7 +48,7 @@ module.exports.locationInfo = function (req, res) {
                     rating: 5,
                     timestamp: '16 July 2013',
                     reviewText: 'What a great place. I can\'t say enough good things about it.'
-                },{
+                }, {
                     author: 'Julius Maximus',
                     rating: 3,
                     timestamp: '16 June 2013',
@@ -62,7 +63,6 @@ module.exports.locationInfo = function (req, res) {
 module.exports.addReview = function (req, res) {
     res.render('location-review-form',
         {title: 'Review this parkour location'});
-
 };
 
-//
+//\\

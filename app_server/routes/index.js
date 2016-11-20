@@ -17,3 +17,5 @@ router.get('/about', ctrlOthers.about);
 router.get('/parkour', ctrlOthers.parkour);
 
 module.exports = router;
+
+//\\
