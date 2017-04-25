@@ -4,14 +4,15 @@
 
 module.exports.about = function (req, res) {
     res.render('generic-text',
-        {title: 'About Hardcore Parkour'});
+        {title: 'About Hardcore Parkour'}
+    );
 };
 
+//
 module.exports.parkour = function (req, res) {
     res.render('locations-list', {
         title: 'The Sport of Parkour',
-        pageHeader:
-        {
+        pageHeader: {
             title: 'HardcoreParkore',
             strapline: ' Find locations near you to do some Parkour!'
 
@@ -36,7 +37,8 @@ module.exports.parkour = function (req, res) {
                 rating: 2,
                 facilities: ['Stair Sets', 'Gaps', 'Parallel Walls'],
                 distance: '250m'
-            }]
+            }
+        ]
     });
 };
 
