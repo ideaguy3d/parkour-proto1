@@ -7,6 +7,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-testing/src/app/about/about.tmpl.html" afterPath="$PROJECT_DIR$/angular-testing/src/app/about/about.tmpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-testing/src/app/common/models/messages-model.js" afterPath="$PROJECT_DIR$/angular-testing/src/app/common/models/messages-model.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-testing/src/app/experiments/experiments.tmpl.html" afterPath="$PROJECT_DIR$/angular-testing/src/app/experiments/experiments.tmpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_server/views/index.jade" afterPath="$PROJECT_DIR$/app_server/views/index.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_server/views/layout.jade" afterPath="$PROJECT_DIR$/app_server/views/layout.jade" />
     </list>
     <ignored path="parkour-proto1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -122,18 +124,18 @@
     <favorites_list name="parkour-proto1" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.66122234">
+    <splitter split-orientation="horizontal" split-proportion="0.56279904">
       <split-first>
         <splitter split-orientation="vertical" split-proportion="0.9">
           <split-first>
-            <splitter split-orientation="horizontal" split-proportion="0.48159897">
+            <splitter split-orientation="horizontal" split-proportion="0.36231884">
               <split-first>
                 <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
                   <file leaf-file-name="karma.conf.js" pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/angular-testing/karma.conf.js">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="29">
-                          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+                        <state relative-caret-position="348">
+                          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
                           <folding />
                         </state>
                       </provider>
@@ -168,19 +170,16 @@
                 </leaf>
               </split-first>
               <split-second>
-                <splitter split-orientation="vertical" split-proportion="0.5">
+                <splitter split-orientation="vertical" split-proportion="0.49225268">
                   <split-first>
                     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-                      <file leaf-file-name="about.tmpl.html" pinned="false" current-in-tab="true">
-                        <entry file="file://$PROJECT_DIR$/angular-testing/src/app/about/about.tmpl.html">
+                      <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
+                        <entry file="file://$PROJECT_DIR$/app_server/views/index.jade">
                           <provider selected="true" editor-type-id="text-editor">
-                            <state relative-caret-position="220">
-                              <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+                            <state relative-caret-position="203">
+                              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
                               <folding>
-                                <element signature="n#div#0;n#!!top" expanded="true" />
-                                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                                <element signature="n#div#0;n#div#0;n#!!top" expanded="true" />
-                                <element signature="n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                                <element signature="n#block#0;n#!!top" expanded="true" />
                               </folding>
                             </state>
                           </provider>
@@ -190,14 +189,29 @@
                   </split-first>
                   <split-second>
                     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-                      <file leaf-file-name="experiments.tmpl.html" pinned="false" current-in-tab="true">
-                        <entry file="file://$PROJECT_DIR$/angular-testing/src/app/experiments/experiments.tmpl.html">
+                      <file leaf-file-name="layout.jade" pinned="false" current-in-tab="true">
+                        <entry file="file://$PROJECT_DIR$/app_server/views/layout.jade">
                           <provider selected="true" editor-type-id="text-editor">
-                            <state relative-caret-position="80">
-                              <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+                            <state relative-caret-position="232">
+                              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
                               <folding>
-                                <element signature="n#div#0;n#!!top" expanded="true" />
-                                <element signature="n#form#0;n#div#0;n#!!top" expanded="true" />
+                                <element signature="n#head#0;n#html#0;n#!!top" expanded="true" />
+                                <element signature="n#body#0;n#html#0;n#!!top" expanded="true" />
+                                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                                <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                                <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                                <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                                <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                                <element signature="n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                                <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                                <element signature="n#br#3;n#html#0;n#!!top" expanded="true" />
+                                <element signature="n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
+                                <element signature="n#div#0;n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
+                                <element signature="n#div#0;n#div#0;n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
+                                <element signature="n#small#0;n#div#0;n#div#0;n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
+                                <element signature="n#a#0;n#small#0;n#div#0;n#div#0;n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
                               </folding>
                             </state>
                           </provider>
@@ -346,45 +360,6 @@
                       </provider>
                     </entry>
                   </file>
-                  <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
-                    <entry file="file://$PROJECT_DIR$/app_server/views/index.jade">
-                      <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="58">
-                          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-                          <folding>
-                            <element signature="n#block#0;n#!!top" expanded="true" />
-                          </folding>
-                        </state>
-                      </provider>
-                    </entry>
-                  </file>
-                  <file leaf-file-name="layout.jade" pinned="false" current-in-tab="false">
-                    <entry file="file://$PROJECT_DIR$/app_server/views/layout.jade">
-                      <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="174">
-                          <caret line="32" column="52" lean-forward="false" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
-                          <folding>
-                            <element signature="n#head#0;n#html#0;n#!!top" expanded="true" />
-                            <element signature="n#body#0;n#html#0;n#!!top" expanded="true" />
-                            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                            <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                            <element signature="n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                            <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                            <element signature="n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                            <element signature="n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                            <element signature="n#small#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                            <element signature="n#a#0;n#small#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                          </folding>
-                        </state>
-                      </provider>
-                    </entry>
-                  </file>
                 </leaf>
               </split-second>
             </splitter>
@@ -414,7 +389,6 @@
         <option value="$PROJECT_DIR$/app_api/controllers/locations.api.ctrl.js" />
         <option value="$PROJECT_DIR$/app_server/controllers/locations.js" />
         <option value="$PROJECT_DIR$/app_server/views/location-review-form.jade" />
-        <option value="$PROJECT_DIR$/app_server/views/index.jade" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/app_server/controllers/others.js" />
         <option value="$PROJECT_DIR$/app_api/controllers/reviews.api.ctrl.js" />
@@ -426,6 +400,8 @@
         <option value="$PROJECT_DIR$/angular-testing/src/app/about/about.tmpl.html" />
         <option value="$PROJECT_DIR$/angular-testing/src/app/about/about.js" />
         <option value="$PROJECT_DIR$/angular-testing/src/app/experiments/experiments.tmpl.html" />
+        <option value="$PROJECT_DIR$/app_server/views/index.jade" />
+        <option value="$PROJECT_DIR$/app_server/views/layout.jade" />
       </list>
     </option>
   </component>
@@ -475,6 +451,74 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="data-structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data-structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data-structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data-structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data-structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data-structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data-structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data-structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data-structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -600,12 +644,12 @@
       <workItem from="1493456137005" duration="599000" />
       <workItem from="1493526148390" duration="1152000" />
       <workItem from="1493568549786" duration="981000" />
-      <workItem from="1497844081043" duration="28000" />
+      <workItem from="1497844081043" duration="1570000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49858000" />
+    <option name="totallyTimeSpent" value="51400000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -618,8 +662,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16122234" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.119072706" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.45327103" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -838,11 +883,12 @@
             <element signature="n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#small#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#a#0;n#small#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#br#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#small#0;n#div#0;n#div#0;n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#a#0;n#small#0;n#div#0;n#div#0;n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1000,11 +1046,12 @@
             <element signature="n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#small#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#a#0;n#small#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#br#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#small#0;n#div#0;n#div#0;n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#a#0;n#small#0;n#div#0;n#div#0;n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1070,45 +1117,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_server/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="32" column="52" lean-forward="false" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#small#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#a#0;n#small#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_server/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding>
-            <element signature="n#block#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1222,14 +1234,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-testing/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1277,32 +1281,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-testing/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_api/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-testing/src/app/about/about.tmpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1319,6 +1302,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/angular-testing/src/app/about/about.tmpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app_server/controllers/others.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -1330,6 +1325,58 @@
             <element signature="e#623#883#0" expanded="true" />
             <element signature="e#885#1128#0" expanded="true" />
             <element signature="e#1130#1402#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-testing/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_server/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#br#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#small#0;n#div#0;n#div#0;n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#a#0;n#small#0;n#div#0;n#div#0;n#footer#0;n#br#3;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_server/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="n#block#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
