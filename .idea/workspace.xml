@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e7b624a-6d48-4c60-82ce-f375fd775911" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_api/controllers/reviews.api.ctrl.js" afterPath="$PROJECT_DIR$/app_api/controllers/reviews.api.ctrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_api/routes/index.js" afterPath="$PROJECT_DIR$/app_api/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-testing/src/app/about/about.js" afterPath="$PROJECT_DIR$/angular-testing/src/app/about/about.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-testing/src/app/about/about.tmpl.html" afterPath="$PROJECT_DIR$/angular-testing/src/app/about/about.tmpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-testing/src/app/common/models/messages-model.js" afterPath="$PROJECT_DIR$/angular-testing/src/app/common/models/messages-model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-testing/src/app/experiments/experiments.tmpl.html" afterPath="$PROJECT_DIR$/angular-testing/src/app/experiments/experiments.tmpl.html" />
     </list>
     <ignored path="parkour-proto1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,12 +64,11 @@
                 <file leaf-file-name="others.js" pinned="false" current-in-tab="false">
                   <entry file="file://$PROJECT_DIR$/app_server/controllers/others.js">
                     <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="440">
+                      <state relative-caret-position="522">
                         <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
                         <folding>
                           <element signature="e#0#51#0" expanded="true" />
                           <element signature="e#96#179#0" expanded="true" />
-                          <element signature="e#326#446#0" expanded="true" />
                           <element signature="e#885#1128#0" expanded="true" />
                           <element signature="e#1130#1402#0" expanded="true" />
                         </folding>
@@ -82,7 +83,7 @@
                 <file leaf-file-name="location-review-form.jade" pinned="false" current-in-tab="false">
                   <entry file="file://$PROJECT_DIR$/app_server/views/location-review-form.jade">
                     <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="180">
+                      <state relative-caret-position="203">
                         <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
                         <folding>
                           <element signature="n#div#0;n#block#0;n#!!top" expanded="true" />
@@ -102,7 +103,7 @@
                 <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
                   <entry file="file://$PROJECT_DIR$/app_api/routes/index.js">
                     <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="340">
+                      <state relative-caret-position="493">
                         <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
                         <folding />
                       </state>
@@ -121,23 +122,44 @@
     <favorites_list name="parkour-proto1" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.85819715">
+    <splitter split-orientation="horizontal" split-proportion="0.66122234">
       <split-first>
         <splitter split-orientation="vertical" split-proportion="0.9">
           <split-first>
-            <splitter split-orientation="horizontal" split-proportion="0.5">
+            <splitter split-orientation="horizontal" split-proportion="0.48159897">
               <split-first>
                 <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
                   <file leaf-file-name="karma.conf.js" pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/angular-testing/karma.conf.js">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="760">
-                          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+                        <state relative-caret-position="29">
+                          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+                          <folding />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file leaf-file-name="messages-model.js" pinned="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/angular-testing/src/app/common/models/messages-model.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="29">
+                          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+                          <folding />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file leaf-file-name="about.js" pinned="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/angular-testing/src/app/about/about.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="58">
+                          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
                           <folding>
-                            <element signature="n#!!doc" expanded="true" />
-                            <element signature="e#461#756#0" expanded="true" />
-                            <element signature="e#790#1071#0" expanded="true" />
-                            <element signature="e#1316#1373#0" expanded="true" />
+                            <element signature="e#30#78#0" expanded="true" />
+                            <element signature="e#113#336#0" expanded="true" />
+                            <element signature="e#166#319#0" expanded="true" />
+                            <element signature="e#387#649#0" expanded="true" />
+                            <element signature="e#595#642#0" expanded="true" />
                           </folding>
                         </state>
                       </provider>
@@ -146,60 +168,53 @@
                 </leaf>
               </split-first>
               <split-second>
-                <leaf>
-                  <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-                    <entry file="file://$PROJECT_DIR$/angular-testing/src/index.html">
-                      <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="120">
-                          <caret line="6" column="68" lean-forward="false" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
-                          <folding>
-                            <element signature="n#body#0;n#html#0;n#!!top" expanded="true" />
-                            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                            <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                          </folding>
-                        </state>
-                      </provider>
-                    </entry>
-                  </file>
-                  <file leaf-file-name="about.tmpl.html" pinned="false" current-in-tab="true">
-                    <entry file="file://$PROJECT_DIR$/angular-testing/src/app/about/about.tmpl.html">
-                      <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="260">
-                          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-                          <folding>
-                            <element signature="n#div#0;n#!!top" expanded="true" />
-                            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                            <element signature="n#div#0;n#div#0;n#!!top" expanded="true" />
-                            <element signature="n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                          </folding>
-                        </state>
-                      </provider>
-                    </entry>
-                  </file>
-                  <file leaf-file-name="experiments.tmpl.html" pinned="false" current-in-tab="false">
-                    <entry file="file://$PROJECT_DIR$/angular-testing/src/app/experiments/experiments.tmpl.html">
-                      <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="220">
-                          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-                          <folding>
-                            <element signature="n#div#0;n#!!top" expanded="true" />
-                            <element signature="n#form#0;n#div#0;n#!!top" expanded="true" />
-                          </folding>
-                        </state>
-                      </provider>
-                    </entry>
-                  </file>
-                </leaf>
+                <splitter split-orientation="vertical" split-proportion="0.5">
+                  <split-first>
+                    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+                      <file leaf-file-name="about.tmpl.html" pinned="false" current-in-tab="true">
+                        <entry file="file://$PROJECT_DIR$/angular-testing/src/app/about/about.tmpl.html">
+                          <provider selected="true" editor-type-id="text-editor">
+                            <state relative-caret-position="220">
+                              <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+                              <folding>
+                                <element signature="n#div#0;n#!!top" expanded="true" />
+                                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                                <element signature="n#div#0;n#div#0;n#!!top" expanded="true" />
+                                <element signature="n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                              </folding>
+                            </state>
+                          </provider>
+                        </entry>
+                      </file>
+                    </leaf>
+                  </split-first>
+                  <split-second>
+                    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+                      <file leaf-file-name="experiments.tmpl.html" pinned="false" current-in-tab="true">
+                        <entry file="file://$PROJECT_DIR$/angular-testing/src/app/experiments/experiments.tmpl.html">
+                          <provider selected="true" editor-type-id="text-editor">
+                            <state relative-caret-position="80">
+                              <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+                              <folding>
+                                <element signature="n#div#0;n#!!top" expanded="true" />
+                                <element signature="n#form#0;n#div#0;n#!!top" expanded="true" />
+                              </folding>
+                            </state>
+                          </provider>
+                        </entry>
+                      </file>
+                    </leaf>
+                  </split-second>
+                </splitter>
               </split-second>
             </splitter>
           </split-first>
           <split-second>
-            <leaf>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file leaf-file-name="locations.api.ctrl.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app_api/controllers/locations.api.ctrl.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="60">
+                    <state relative-caret-position="11">
                       <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
                       <folding />
                     </state>
@@ -209,7 +224,7 @@
               <file leaf-file-name="reviews.api.ctrl.js" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/app_api/controllers/reviews.api.ctrl.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="60">
+                    <state relative-caret-position="87">
                       <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
                       <folding />
                     </state>
@@ -221,30 +236,31 @@
         </splitter>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.51581246">
+        <splitter split-orientation="horizontal" split-proportion="0.6007463">
           <split-first>
             <splitter split-orientation="vertical" split-proportion="0.42719486">
               <split-first>
                 <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-                  <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+                  <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/app_server/routes/index.js">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="213">
+                        <state relative-caret-position="464">
                           <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
                           <folding />
                         </state>
                       </provider>
                     </entry>
                   </file>
-                  <file leaf-file-name="locationsSchema.js" pinned="false" current-in-tab="false">
+                  <file leaf-file-name="locationsSchema.js" pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/app_server/models/locationsSchema.js">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="320">
-                          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+                        <state relative-caret-position="140">
+                          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
                           <folding>
                             <element signature="e#0#51#0" expanded="true" />
                             <element signature="e#133#260#0" expanded="true" />
                             <element signature="e#303#473#0" expanded="true" />
+                            <element signature="e#518#804#0" expanded="true" />
                           </folding>
                         </state>
                       </provider>
@@ -257,7 +273,7 @@
                   <file leaf-file-name="locations.js" pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/app_server/controllers/locations.js">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="220">
+                        <state relative-caret-position="319">
                           <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
                           <folding />
                         </state>
@@ -287,7 +303,7 @@
                   <file leaf-file-name="db.js" pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/app_server/models/db.js">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="420">
+                        <state relative-caret-position="609">
                           <caret line="44" column="3" lean-forward="false" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
                           <folding>
                             <element signature="e#0#51#0" expanded="true" />
@@ -333,7 +349,7 @@
                   <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/app_server/views/index.jade">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="40">
+                        <state relative-caret-position="58">
                           <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
                           <folding>
                             <element signature="n#block#0;n#!!top" expanded="true" />
@@ -345,7 +361,7 @@
                   <file leaf-file-name="layout.jade" pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/app_server/views/layout.jade">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="120">
+                        <state relative-caret-position="174">
                           <caret line="32" column="52" lean-forward="false" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
                           <folding>
                             <element signature="n#head#0;n#html#0;n#!!top" expanded="true" />
@@ -405,9 +421,11 @@
         <option value="$PROJECT_DIR$/app_api/routes/index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/angular-testing/package.json" />
-        <option value="$PROJECT_DIR$/angular-testing/src/app/experiments/experiments.tmpl.html" />
         <option value="$PROJECT_DIR$/angular-testing/src/index.html" />
+        <option value="$PROJECT_DIR$/angular-testing/src/app/common/models/messages-model.js" />
         <option value="$PROJECT_DIR$/angular-testing/src/app/about/about.tmpl.html" />
+        <option value="$PROJECT_DIR$/angular-testing/src/app/about/about.js" />
+        <option value="$PROJECT_DIR$/angular-testing/src/app/experiments/experiments.tmpl.html" />
       </list>
     </option>
   </component>
@@ -447,26 +465,26 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="parkour-proto1" />
+              <option name="myItemId" value="data-structures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="parkour-proto1" />
+              <option name="myItemId" value="data-structures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/angular-testing-quick-start-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
@@ -578,12 +596,16 @@
       <workItem from="1493362430889" duration="181000" />
       <workItem from="1493363342795" duration="1020000" />
       <workItem from="1493427167423" duration="62000" />
-      <workItem from="1493427452204" duration="1473000" />
+      <workItem from="1493427452204" duration="7290000" />
+      <workItem from="1493456137005" duration="599000" />
+      <workItem from="1493526148390" duration="1152000" />
+      <workItem from="1493568549786" duration="981000" />
+      <workItem from="1497844081043" duration="28000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41281000" />
+    <option name="totallyTimeSpent" value="49858000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -597,7 +619,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.112223394" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16122234" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.45327103" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -654,42 +676,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app_server/models/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="60" column="4" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-            <element signature="e#160#348#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_server/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="32" column="70" lean-forward="false" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#small#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#a#0;n#small#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_server/views/location-review-form.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -800,6 +786,7 @@
             <element signature="e#0#51#0" expanded="true" />
             <element signature="e#133#260#0" expanded="true" />
             <element signature="e#303#473#0" expanded="true" />
+            <element signature="e#518#804#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -946,6 +933,7 @@
             <element signature="e#0#51#0" expanded="true" />
             <element signature="e#133#260#0" expanded="true" />
             <element signature="e#303#473#0" expanded="true" />
+            <element signature="e#518#804#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1084,7 +1072,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_server/views/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="174">
           <caret line="32" column="52" lean-forward="false" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="true" />
@@ -1116,7 +1104,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_server/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
+        <state relative-caret-position="58">
           <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding>
             <element signature="n#block#0;n#!!top" expanded="true" />
@@ -1126,7 +1114,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_server/models/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="609">
           <caret line="44" column="3" lean-forward="false" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
@@ -1135,21 +1123,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_server/models/locationsSchema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-            <element signature="e#133#260#0" expanded="true" />
-            <element signature="e#303#473#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_server/controllers/locations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="319">
           <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding />
         </state>
@@ -1175,24 +1151,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_server/controllers/others.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-            <element signature="e#96#179#0" expanded="true" />
-            <element signature="e#609#1412#0" expanded="true" />
-            <element signature="e#623#883#0" expanded="true" />
-            <element signature="e#885#1128#0" expanded="true" />
-            <element signature="e#1130#1402#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_server/views/location-review-form.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="203">
           <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
           <folding>
             <element signature="n#div#0;n#block#0;n#!!top" expanded="true" />
@@ -1237,17 +1198,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_api/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_server/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
+        <state relative-caret-position="464">
           <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
           <folding />
         </state>
@@ -1255,7 +1208,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_api/controllers/reviews.api.ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="87">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
@@ -1263,7 +1216,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_api/controllers/locations.api.ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="11">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
@@ -1281,18 +1234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-testing/src/app/experiments/experiments.tmpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="n#div#0;n#!!top" expanded="true" />
-            <element signature="n#form#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1300,19 +1241,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="68" lean-forward="false" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-testing/src/app/common/models/messages-model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-testing/src/app/about/about.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding>
-            <element signature="n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#30#78#0" expanded="true" />
+            <element signature="e#113#336#0" expanded="true" />
+            <element signature="e#166#319#0" expanded="true" />
+            <element signature="e#387#649#0" expanded="true" />
+            <element signature="e#595#642#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-testing/src/app/experiments/experiments.tmpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="n#div#0;n#!!top" expanded="true" />
+            <element signature="n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-testing/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_api/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/angular-testing/src/app/about/about.tmpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        <state relative-caret-position="220">
+          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
           <folding>
             <element signature="n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1322,15 +1306,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-testing/karma.conf.js">
+    <entry file="file://$PROJECT_DIR$/app_server/models/locationsSchema.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="140">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#461#756#0" expanded="true" />
-            <element signature="e#790#1071#0" expanded="true" />
-            <element signature="e#1316#1373#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#133#260#0" expanded="true" />
+            <element signature="e#303#473#0" expanded="true" />
+            <element signature="e#518#804#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_server/controllers/others.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#96#179#0" expanded="true" />
+            <element signature="e#609#1412#0" expanded="true" />
+            <element signature="e#623#883#0" expanded="true" />
+            <element signature="e#885#1128#0" expanded="true" />
+            <element signature="e#1130#1402#0" expanded="true" />
           </folding>
         </state>
       </provider>

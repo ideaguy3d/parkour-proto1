@@ -1,8 +1,7 @@
 angular.module('myApp.about', [
     'ui.router',
     'myApp.models.messages'
-])
-    .config(function ($stateProvider) {
+]).config(function ($stateProvider) {
         $stateProvider
             .state('about', {
                 url: '/about',
