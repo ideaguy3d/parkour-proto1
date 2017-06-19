@@ -1,7 +1,6 @@
 /**
  * Created by Julius Alvarado on 11/1/2016.
  */
-
 var express = require('express');
 var router = express.Router();
 var ctrlLocations = require('../controllers/locations');
