@@ -71,10 +71,32 @@ function SetClass() {
             if(otherSet.has(obj)) intersectionSet.add(obj);
         }
         return intersectionSet;
+    };
+
+    this.difference = function(otherSet){
+       var diffSet = new SetClass();
+       var values = this.values();
+        for (var i = 0; i < values.length; i++) {
+            var obj = values[i];
+            if(!otherSet.has(obj)) diffSet.add(obj); 
+        }
+       return diffSet;
+    };
+
+    this.subset = function(otherSet){
+        var values = this.values();
+        if(this.size() > otherSet.size()) return false;
+        else {
+            for (var i = 0; i < values.length; i++) {
+                var obj = values[i];
+                if(!otherSet.has(obj)) return false;
+            }
+            return true;
+        }
     }
 } // end of SetClass()
 
-//#region testing set.union
+//#region testing set operations
 dash();
 console.log("in Set data structure file:");
 function unionSetTest() {
@@ -103,8 +125,29 @@ function intersectionSetTest() {
     console.log("intersectionSet.values() = ");
     console.log(intersectionSet.values());
 }
+function differenceSetTest() {
+    var setA = new SetClass(), setB = new SetClass();
+    setA.add(1); setA.add(2); setA.add(3); setA.add(19);
+    setB.add(2); setB.add(3); setB.add(4);
+    var diffAB = setA.difference(setB),
+    diffBA = setB.difference(setA);
+    console.log("setA.difference(setB) = ");
+    console.log(diffAB.values());
+    console.log("setB.difference(setA) = ");
+    console.log(diffBA.values());
+}
+function subsetSetTest() {
+    var setA = new SetClass(), setB = new SetClass(), setC = new SetClass();
+    setA.add(1); setB.add(2);
+    setB.add(1); setB.add(2); setB.add(3);
+    setC.add(2); setC.add(3); setC.add(4);
+    console.log("setA.subset(setB) ? "+setA.subset(setB));
+    console.log("setA.subset(setC) ? "+setA.subset(setC));
+}
 // unionSetTest();
-intersectionSetTest();
+// intersectionSetTest();
+// differenceSetTest();
+// subsetSetTest();
 dash();
 //#endregion
 
