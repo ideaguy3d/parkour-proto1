@@ -11,7 +11,8 @@ var bodyParser = require('body-parser');
 var routes = require('./app_server/routes/index');
 // var routesApi = require('./app_api/routes/index');
 var users = require('./app_server/routes/users');
-var set = require('./app_server/routes/set');
+// var set = require('./app_server/routes/set');
+var map = require('./app_server/routes/map');
 
 var app = express();
 
@@ -30,7 +31,7 @@ app.use(express.static(path.join(__dirname, 'public') ));
 app.use('/', routes);
 // app.use('/api', routesApi);
 app.use('/users', users);
-app.use('/set', set);
+// app.use('/set', set);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
