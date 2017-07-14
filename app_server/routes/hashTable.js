@@ -22,7 +22,8 @@ function HashTableClass() {
     };
 
     this.put = function (key, value) {
-        var pos = loseloseHashCode(key);
+        var pos = primeHashCode(key);
+        console.log(pl+pl+key+' - '+pos);
         if (table[pos] === undefined) {
             table[pos] = new ValuePairStruct(key, value);
         } else {
@@ -35,31 +36,56 @@ function HashTableClass() {
     };
 
     this.remove = function (key) {
-        table[loseloseHashCode(key)] = undefined;
+        var pos = primeHashCode(key);
+        if(table[pos] !== undefined) {
+            if(table[pos].key === key) {
+                table[pos] = undefined;
+                return true;
+            } else {
+                var idx = ++pos, idx2 = pos++;
+                console.log("idx = "+idx+", idx2 = "+idx2+", pos = ", pos);
+                while(table[idx] === undefined || table[idx].key !== key) {
+                    if(idx > table.length) {
+                        console.error("ERROR in .remove(): index is larger than table.length");
+                        return false;
+                    }
+                    idx++;
+                }
+                if(table[idx].key === key) {
+                    table[idx] = undefined;
+                    return true;
+                }
+            }
+        }
+        return "key provided is not even in the hash table !!";
     };
 
     this.get = function (key) {
-        var pos = loseloseHashCode(key);
+        var pos = primeHashCode(key);
         if (table[pos] !== undefined) {
             if (table[pos].key === key) return table[pos].value;
             else {
                 var index = ++pos, infinieLoopGaurd=0;
-                console.log("above loop index = "+index);
-                console.log(); console.log(table[index]); console.log();
                 while (table[index] === undefined || table[index].key !== key) {
+                    if(index > table.length) {
+                        // somehow I've entered this loop with a key that isn't in the hash table
+                        // but started the linear probe.
+                        console.log("ERROR: key not in table; index = " +index+", table.length = "+table.length);
+                        break;
+                    }
                     index++;
                     infinieLoopGaurd++;
-                    if(infinieLoopGaurd > 10000000) {
-                        console.log(table[16]);
-                        console.log("index = "+index); console.log();
+                    if(infinieLoopGaurd > 1000000) {
                         break;
                     }
                 }
-                console.log("after while loop, infinieLoopGaurd = "+infinieLoopGaurd);
-                if (table[index].key === key) return table[index].value;
+                if (index > table.length) return undefined;
+                else {
+                    return table[index].key === key ? table[index].value : "keys do not match";
+                }
             }
         }
-        return undefined;
+        return "you entered a key that is 'undefined'";
     };
 
     var loseloseHashCode = function (key) {
@@ -68,6 +94,14 @@ function HashTableClass() {
             hash += key.charCodeAt(i);
         }
         return hash % 37;
+    };
+
+    var primeHashCode = function(key){
+        var hash = 5381;
+        for (var i = 0; i < key.length; i++) {
+            hash = hash * 37 + key.charCodeAt(i);
+        }
+        return hash % 1017;
     }
 }
 
@@ -87,6 +121,7 @@ function hashTableTest() {
 }
 function testHash2() {
     var hash = new HashTableClass();
+
     hash.put(' Gandalf', 'gandalf@ email.com');
     hash.put(' John', 'johnsnow@ email.com');
     hash.put(' Tyrion', 'tyrion@ email.com');
@@ -104,9 +139,10 @@ function testHash2() {
     hash.put('car', 'carina@mail.com');
     hash.put('voo', 'vanessa@mail.com');
     hash.put('jar', 'jessica@mail.com');
-    console.log("hash.get() = ");
-    console.log(hash.get(' Ana'));
-    console.log("uhhhhhhhhh, hello ????????");
+
+    console.log(pl+"hash.get('Paul') = ");
+    console.log(pl+hash.get(' Paul'));
+    console.log("hash.remove('voo') = "+hash.remove('_voo'));
 }
 // hashTableTest();
 testHash2();
