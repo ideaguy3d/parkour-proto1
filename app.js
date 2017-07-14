@@ -12,12 +12,15 @@ var routes = require('./app_server/routes/index');
 // var routesApi = require('./app_api/routes/index');
 var users = require('./app_server/routes/users');
 
-/*
-        -- Data Structure and Algorithm includes --
-*/
+/*****************************************************************************************************
+ ----------------------------- Data Structure and Algorithm includes -----------------------------
+ *****************************************************************************************************/
+var baseRoute = "./app_server/routes/";
 // var set = require('./app_server/routes/set');
 // var map = require('./app_server/routes/map');
-var hashTable = require('./app_server/routes/hashTable');
+// var hashTable = require('./app_server/routes/hashTable');
+// var binarySearchTree = require('./app_server/routes/binarySearchTree');
+var prac1 = require(baseRoute + 'algorithmsPrac1');
 var app = express();
 
 // view engine setup
@@ -30,7 +33,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public') ));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 // app.use('/api', routesApi);

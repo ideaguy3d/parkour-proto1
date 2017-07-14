@@ -8,7 +8,6 @@ function dash() {
     console.log("----------------------------------------------------------------");
     console.log("----------------------------------------------------------------");
     console.log();
-
 }
 function HashTableClass() {
     var table = [];
@@ -145,5 +144,5 @@ function testHash2() {
     console.log("hash.remove('voo') = "+hash.remove('_voo'));
 }
 // hashTableTest();
-testHash2();
+// testHash2();
 dash();
