@@ -148,7 +148,7 @@ function electionWinner(votes) {
     console.log("jsort = ");
     console.log(jsort);
 }
-//#endregion
+//#endregion electionVoteAlgorithm
 
 //#region //-- random array algorithm prac --\\
 console.log();
@@ -159,25 +159,42 @@ let testArrays = {
     a4: [3, 3, 3],
     a5: [1, 1, 2, 2, 1]
 };
-for(let k in testArrays) {
-    console.log(pl+`TEST: firstDuplicate(${k}) = ${firstDuplicate(testArrays[k])}`);
-}
+// for (let k in testArrays) {console.log(pl + `TEST: firstDuplicate(${k}) = ${firstDuplicate(testArrays[k])}`);}
 function firstDuplicate(a) {
-    // e.g. a =  [2, 3, 3, 1, 5, 2]
-    let storedIdxArr = [],
-        storedIdxObj = {},
-        minVal;
-    let returnVal,
-        atLeastOneDuplicate = false;
+    const hashTable = function(){
+
+    };
+    let storedIdxArr = [];
+    let storedIdxObj = {};
+    let minVal;
+    let returnVal;
+    let atLeastOneDuplicate = false;
+
     a.forEach(function (elem, idx, arr) {
+        // e.g.  [1, 1, 2, 2, 1]
         let ahead = idx + 1,
             curr = arr[idx],
             dc = arr.includes(curr, ahead);
+
         if (dc) {
             atLeastOneDuplicate = true;
             storedIdxArr[idx] = arr.indexOf(curr, ahead);
-            storedIdxObj[curr] = arr.indexOf(curr, ahead);
-        } else if (!atLeastOneDuplicate) {
+            // I'm getting duplicate insertions at array a5
+            if (!storedIdxObj[curr]) {
+                storedIdxObj[curr] = arr.indexOf(curr, ahead);
+            } else {
+                console.log(pl + pl + pl + "in else clause of duplicate check");
+                storedIdxObj[curr + a.length + idx] = arr.indexOf(curr, ahead);
+                console.log();
+            }
+            if (a === [1, 1, 2, 2, 1]) {
+                /*console.log(`index ${idx}) test array ${a}`);
+                 console.log(pl+storedIdxArr[idx]);
+                 console.log(pl+storedIdxObj[curr]);
+                 console.log(storedIdxObj);
+                 console.log(storedIdxArr);*/
+            }
+        } else if (!atLeastOneDuplicate && (idx === (arr.length - 1))) {
             returnVal = null;
         }
     });
@@ -185,18 +202,89 @@ function firstDuplicate(a) {
     minVal = Math.min(...storedIdxArr);
     if (!returnVal && !atLeastOneDuplicate) {
         return -1;
-    } else {
-        for (let prop in storedIdxObj) {
-            if (storedIdxObj[prop] === minVal) {
-                returnVal = parseInt(prop);
+    }
+    else {
+        /*console.log(pl + pl + `test array = ${a}`);
+         console.log(storedIdxObj);*/
+        let storedIdxObjKeysArr = Object.keys(storedIdxObj);
+        if (storedIdxObjKeysArr.length > 1) {
+            for (let prop in storedIdxObj) {
+                if (storedIdxObj[prop] === minVal) {
+                    returnVal = parseInt(prop);
+                } else {
+                    return -1;
+                }
             }
+        } else {
+            return parseInt(storedIdxObjKeysArr[0]);
         }
     }
     return returnVal;
 }
+function firstDuplicate1011(a) { // 1011 for 10/11 tests pass
+    let storedIdxArr = [],
+        storedIdxObj = {},
+        minVal;
+    let returnVal,
+        atLeastOneDuplicate = false;
+
+    a.forEach(function (elem, idx, arr) {
+        let ahead = idx + 1,
+            curr = arr[idx],
+            dc = arr.includes(curr, ahead);
+
+        if (dc) {
+            atLeastOneDuplicate = true;
+            storedIdxArr[idx] = arr.indexOf(curr, ahead);
+            storedIdxObj[curr] = arr.indexOf(curr, ahead);
+        } else if (!atLeastOneDuplicate && (idx === (arr.length - 1))) {
+            returnVal = null;
+        }
+    });
+
+    minVal = Math.min(...storedIdxArr);
+
+    if (!returnVal && !atLeastOneDuplicate) {
+        console.log("in (!returnVal && !atLeastOneDuplicate)")
+        console.log(a);
+        if(a === [2, 3, 3, 1, 5, 2]) {
+            console(" [2, 3, 3, 1, 5, 2] should not be in this loop.")
+        }
+        return -1;
+    }
+    else {
+        let storedIdxObjKeysArr = Object.keys(storedIdxObj);
+        if (storedIdxObjKeysArr.length > 1) {
+            let propCount = 0;
+            let objSize = Object.keys(storedIdxObj).length;
+            for (let prop in storedIdxObj) {
+                propCount++;
+                if (storedIdxObj[prop] === minVal) {
+                    returnVal = parseInt(prop);
+                } else if( !returnVal && (objSize === propCount) ) {
+                    return -1;
+                }
+            }
+        } else {
+            return parseInt(storedIdxObjKeysArr[0]);
+        }
+    }
+    return returnVal;
+}
+//#endregion
+
+
+
+//#region debugPrac
+
 
 
 //#endregion
+
+
+
+
+
 
 
 //
