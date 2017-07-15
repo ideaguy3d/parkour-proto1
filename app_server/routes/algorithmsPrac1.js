@@ -52,7 +52,7 @@ function jSumMain() {
     console.log(ao);
     let s = ao.length;
     console.log("jSumMain = ");
-    console.log (jSum(s, ao));
+    console.log(jSum(s, ao));
 }
 // jSumMain();
 
@@ -61,28 +61,116 @@ function jSumMain() {
 //#region matrix diagonal difference
 
 function diagDiff() {
-    let a = [ [ 11, 2, 4 ], [ 4, 5, 6 ], [ 10, 8, -12 ] ];
+    let a = [[11, 2, 4], [4, 5, 6], [10, 8, -12]];
 
     //-- algorithm starts:
     var primaryDiagonelSum = 0;
-    var primaryDiagonel = a.map(function(row, idx, matrix){
+    var primaryDiagonel = a.map(function (row, idx, matrix) {
         let pos = row[idx];
         primaryDiagonelSum += pos;
         return pos;
     });
     var secondaryDiagonelSum = 0;
-    var secondaryDiagonel = a.map(function(row, idx, matrix){
+    var secondaryDiagonel = a.map(function (row, idx, matrix) {
         let i = row.length - 1 - idx;
         let pos = row[i];
         secondaryDiagonelSum += pos;
         return pos;
     });
     let ans = primaryDiagonelSum - secondaryDiagonelSum;
-    console.log(ans < 0 ? ans*-1 : ans);
+    console.log("diagonal diff = ");
+    console.log(ans < 0 ? ans * -1 : ans);
 }
-diagDiff();
+// diagDiff();
 
 //#endregion
+
+
+//#region //-- vote question --\\
+
+const votes = ['Alex', 'Mich', 'Harry', 'Dave', 'Mich', 'Vic', 'Harry',
+    'Alex', 'Mary', 'Mary'];
+electionWinner(votes);
+function electionWinner(votes) {
+    // create an internal set data structure to eliminate duplicates
+    const setStruct = function () {
+        const set = {};
+
+        this.has = function (val) {
+            return set.hasOwnProperty(val);
+        };
+
+        this.put = function (val) {
+            if (!this.has(val)) {
+                set[val] = val;
+            }
+        };
+
+        this.values = function () {
+            return Object.keys(set);
+        };
+    };
+    // create a copy of the original arr
+    let items = Array.from(votes);
+    // full the set data structure
+    let jset = new setStruct();
+    for (var i = 0; i < items.length; i++) {
+        var obj = items[i];
+        jset.put(obj);
+    }
+    // console.log("jset.values() = ");
+    // console.log(jset.values());
+
+    let nonDuplicates = jset.values();
+    let countVotes = {};
+
+
+    nonDuplicates.map(function(val, idx, arr){
+        let count = 0;
+        items.forEach(function(elem){
+            if(val === elem) {
+                countVotes[val] = ++count;
+            }
+        });
+    });
+
+    console.log(countVotes);
+
+    let jsort = items.sort(function (a, b) {
+        let nameA = a.toUpperCase(); // ignore upper and lowercase
+        let nameB = b.toUpperCase(); // ignore upper and lowercase
+        if (nameA < nameB) {
+            return -1;
+        }
+        if (nameA > nameB) {
+            return 1;
+        }
+        // names must be equal so return 0
+        return 0;
+    });
+    console.log("jsort = ");
+    console.log(jsort);
+}
+
+//#endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
 
 
 
