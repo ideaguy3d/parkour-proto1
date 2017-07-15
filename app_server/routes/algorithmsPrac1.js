@@ -2,8 +2,8 @@
  * Created by Julius Alvarado on 7/14/2017.
  */
 
+const pl = " ->   ";
 
-/****/
 //#region //-- array left shift operation --\\
 
 function readLine() {
@@ -58,7 +58,7 @@ function jSumMain() {
 
 //#endregion
 
-//#region matrix diagonal difference
+//#region //-- matrix diagonal difference --\\
 
 function diagDiff() {
     let a = [[11, 2, 4], [4, 5, 6], [10, 8, -12]];
@@ -85,12 +85,10 @@ function diagDiff() {
 
 //#endregion
 
-
 //#region //-- vote question --\\
-
 const votes = ['Alex', 'Mich', 'Harry', 'Dave', 'Mich', 'Vic', 'Harry',
     'Alex', 'Mary', 'Mary'];
-electionWinner(votes);
+// electionWinner(votes);
 function electionWinner(votes) {
     // create an internal set data structure to eliminate duplicates
     const setStruct = function () {
@@ -124,11 +122,10 @@ function electionWinner(votes) {
     let nonDuplicates = jset.values();
     let countVotes = {};
 
-
-    nonDuplicates.map(function(val, idx, arr){
+    nonDuplicates.map(function (val, idx, arr) {
         let count = 0;
-        items.forEach(function(elem){
-            if(val === elem) {
+        items.forEach(function (elem) {
+            if (val === elem) {
                 countVotes[val] = ++count;
             }
         });
@@ -151,23 +148,55 @@ function electionWinner(votes) {
     console.log("jsort = ");
     console.log(jsort);
 }
-
 //#endregion
 
+//#region //-- random array algorithm prac --\\
+console.log();
+let testArrays = {
+    a1: [2, 3, 3, 1, 5, 2],
+    a2: [2, 4, 3, 5, 1],
+    a3: [2, 3, 3],
+    a4: [3, 3, 3],
+    a5: [1, 1, 2, 2, 1]
+};
+for(let k in testArrays) {
+    console.log(pl+`TEST: firstDuplicate(${k}) = ${firstDuplicate(testArrays[k])}`);
+}
+function firstDuplicate(a) {
+    // e.g. a =  [2, 3, 3, 1, 5, 2]
+    let storedIdxArr = [],
+        storedIdxObj = {},
+        minVal;
+    let returnVal,
+        atLeastOneDuplicate = false;
+    a.forEach(function (elem, idx, arr) {
+        let ahead = idx + 1,
+            curr = arr[idx],
+            dc = arr.includes(curr, ahead);
+        if (dc) {
+            atLeastOneDuplicate = true;
+            storedIdxArr[idx] = arr.indexOf(curr, ahead);
+            storedIdxObj[curr] = arr.indexOf(curr, ahead);
+        } else if (!atLeastOneDuplicate) {
+            returnVal = null;
+        }
+    });
+
+    minVal = Math.min(...storedIdxArr);
+    if (!returnVal && !atLeastOneDuplicate) {
+        return -1;
+    } else {
+        for (let prop in storedIdxObj) {
+            if (storedIdxObj[prop] === minVal) {
+                returnVal = parseInt(prop);
+            }
+        }
+    }
+    return returnVal;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+//#endregion
 
 
 //
