@@ -3,7 +3,10 @@
  */
 
 const pl = " ->   ";
-
+console.log();
+console.log("in 'algorithmsPrac1.js' file");
+console.log();
+console.log();
 //#region //-- array left shift operation --\\
 
 function readLine() {
@@ -86,9 +89,10 @@ function diagDiff() {
 //#endregion
 
 //#region //-- vote question --\\
-const votes = ['Alex', 'Mich', 'Harry', 'Dave', 'Mich', 'Vic', 'Harry',
-    'Alex', 'Mary', 'Mary'];
-// electionWinner(votes);
+const votes = ['Mich', 'Mich', 'Harry', 'Dave', 'Mich', 'Vic', 'Harry',
+    'Alex', 'Mary', 'Mike', 'Mary', 'Mike', 'Alex', 'Mary'];
+console.log("The winner of the election is...");
+console.log(electionWinner2(votes));
 function electionWinner(votes) {
     // create an internal set data structure to eliminate duplicates
     const setStruct = function () {
@@ -108,21 +112,21 @@ function electionWinner(votes) {
             return Object.keys(set);
         };
     };
+
     // create a copy of the original arr
     let items = Array.from(votes);
-    // full the set data structure
+
+    // fill the set data structure
     let jset = new setStruct();
-    for (var i = 0; i < items.length; i++) {
-        var obj = items[i];
+    for (let i = 0; i < items.length; i++) {
+        let obj = items[i];
         jset.put(obj);
     }
-    // console.log("jset.values() = ");
-    // console.log(jset.values());
 
     let nonDuplicates = jset.values();
     let countVotes = {};
 
-    nonDuplicates.map(function (val, idx, arr) {
+    nonDuplicates.forEach(function (val, idx, arr) {
         let count = 0;
         items.forEach(function (elem) {
             if (val === elem) {
@@ -130,8 +134,6 @@ function electionWinner(votes) {
             }
         });
     });
-
-    console.log(countVotes);
 
     let jsort = items.sort(function (a, b) {
         let nameA = a.toUpperCase(); // ignore upper and lowercase
@@ -145,8 +147,59 @@ function electionWinner(votes) {
         // names must be equal so return 0
         return 0;
     });
+
+    console.log();
+    console.log("-----------------");
     console.log("jsort = ");
     console.log(jsort);
+} // END OF: electionWinner()
+
+function electionWinner2(votes) {
+    //-- get rid of duplicates:
+    const SetStruct = function () {
+        let items = {};
+        this.has = function (val) {
+            return items.hasOwnProperty(val);
+        };
+        this.put = function (val) {
+            if (!this.has(val)) items[val] = val;
+        };
+        this.values = function () {
+            return Object.keys(items);
+        }
+    };
+    let votesNonDuplicate = new SetStruct();
+    for (let i = 0; i < votes.length; i++) {
+        votesNonDuplicate.put(votes[i])
+    }
+    let votesNonDuplicateArr = votesNonDuplicate.values();
+    votesNonDuplicateArr.sort();
+
+    //-- count all the votes:
+    let votesSum = {};
+    votes.forEach((elem, idx, arr) => {
+        if (votesSum.hasOwnProperty(elem)) votesSum[elem] += 1;
+        else votesSum[elem] = 1;
+    });
+
+    // put the integer value of each vote in an array to use spread operator on it
+    let numberOfVotes = [], count = 0;
+    for (let prop in votesSum) {
+        numberOfVotes[count] = votesSum[prop];
+        ++count;
+    }
+
+    count = 0;
+    // put the people with the most votes into their own array
+    let highestVote = Math.max(...numberOfVotes);
+    let peopleWithMostVotes = [];
+    for(let prop in votesSum) {
+        if (votesSum[prop] === highestVote) {
+            peopleWithMostVotes[count++] = prop;
+        }
+    }
+
+    return peopleWithMostVotes.sort()[peopleWithMostVotes.length-1];
 }
 //#endregion electionVoteAlgorithm
 
@@ -159,7 +212,7 @@ let testArrays = {
     a4: [3, 3, 3],
     a5: [1, 1, 2, 2, 1]
 };
-for (let k in testArrays) {console.log(pl + `TEST: firstDuplicate(${k}) = ${firstDuplicate(testArrays[k])}`);}
+// for (let k in testArrays) {console.log(pl + `TEST: firstDuplicate(${k}) = ${firstDuplicate(testArrays[k])}`);}
 function firstDuplicate(a) {
     let storedIdxArr = [],
         storedIdxObj = {},
@@ -168,14 +221,14 @@ function firstDuplicate(a) {
         atLeastOneDuplicate = false;
     let arr = Array.from(a);
 
-    for(let idx=0; idx<arr.length; idx++) {
+    for (let idx = 0; idx < arr.length; idx++) {
         let ahead = idx + 1,
             curr = arr[idx],
             dc = arr.includes(curr, ahead);
         if (dc) {
             atLeastOneDuplicate = true;
             storedIdxArr[idx] = arr.indexOf(curr, ahead);
-            if(storedIdxObj[curr]) {
+            if (storedIdxObj[curr]) {
                 // do nothing because prop already exists
                 // and I do not want to override it.
             } else {
@@ -201,7 +254,7 @@ function firstDuplicate(a) {
                 propCount++;
                 if (storedIdxObj[prop] === minVal) {
                     returnVal = parseInt(prop);
-                } else if( !returnVal && (objSize === propCount) ) {
+                } else if (!returnVal && (objSize === propCount)) {
                     return -1;
                 }
             }
@@ -247,7 +300,7 @@ function firstDuplicate1011(a) { // 1011 for 10/11 tests pass
                 propCount++;
                 if (storedIdxObj[prop] === minVal) {
                     returnVal = parseInt(prop);
-                } else if( !returnVal && (objSize === propCount) ) {
+                } else if (!returnVal && (objSize === propCount)) {
                     return -1;
                 }
             }
@@ -259,18 +312,18 @@ function firstDuplicate1011(a) { // 1011 for 10/11 tests pass
 }
 //#endregion
 
+//#region //-- object reduce sum total --\\
+
+let dataSet1 = [];
+let dataSet2 = {};
+
+//#endregion
 
 
 //#region debugPrac
 
 
-
 //#endregion
-
-
-
-
-
 
 
 //

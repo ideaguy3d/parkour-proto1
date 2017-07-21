@@ -2,8 +2,8 @@
  * Created by Julius Alvarado on 6/18/2017.
  */
 
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 function dash() {
     // helper to make results in terminal window more readable
