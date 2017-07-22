@@ -11,7 +11,7 @@ function dash() {
 
 }
 function MapClass() {
-    var items = {};
+    let items = {};
 
     this.has = function (key) {
         return key in items;

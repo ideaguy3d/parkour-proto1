@@ -91,8 +91,8 @@ function diagDiff() {
 //#region //-- vote question --\\
 const votes = ['Mich', 'Mich', 'Harry', 'Dave', 'Mich', 'Vic', 'Harry',
     'Alex', 'Mary', 'Mike', 'Mary', 'Mike', 'Alex', 'Mary'];
-console.log("The winner of the election is...");
-console.log(electionWinner2(votes));
+// console.log("The winner of the election is...");
+// console.log(electionWinner2(votes));
 function electionWinner(votes) {
     // create an internal set data structure to eliminate duplicates
     const setStruct = function () {
@@ -314,10 +314,75 @@ function firstDuplicate1011(a) { // 1011 for 10/11 tests pass
 
 //#region //-- object reduce sum total --\\
 
-let dataSet1 = [];
-let dataSet2 = {};
+let dataSet1 = [
+    {team: 'omicron', score: 7},
+    {team: 'bravo', score: 8},
+    {team: 'alpha', score: 2},
+    {team: 'omicron', score: 4},
+    {team: 'bravo', score: 9},
+    {team: 'alpha', score: 3},
+    {team: 'alpha', score: 5},
+];
+let dataSet2 = {
+    prop1:  {team: 'omicron', score: 7},
+    prop2: {team: 'bravo', score: 8},
+    prop3: {team: 'alpha', score: 2},
+    prop4: {team: 'omicron', score: 4},
+    prop5: {team: 'bravo', score: 9},
+    prop6: {team: 'alpha', score: 3},
+    prop7: {team: 'alpha', score: 5},
+};
 
-//#endregion
+// get dataSet1 to reduce team duplicates to something like:
+// [{team: 'o', score: totalScore}, {team: 'a', score: totalScore}...] & sort by team w/highest score at top
+console.log("objectSetSumTotal(dataSet1) = ");
+console.log(objectSetSumTotal(dataSet1));
+function objectSetSumTotal(data) {
+    let dataArr = [], dataArrObjVals = {}, count = 0;
+    let jset = new Set();
+
+    // get rid of the duplicatates
+    for (var i = 0; i < data.length; i++) {
+        var obj = data[i];
+        jset.add(obj.team);
+    }
+
+    // create an array w/non duplicates of data team prop vals
+    var jsetVals = [];
+    jset.forEach(function(v1){
+        jsetVals[count++] = v1;
+    });
+
+    // create an array of complex objects w/identical props as 'data'
+    jsetVals.forEach(function(elem, idx){
+       dataArr[idx] = {
+           team: elem,
+           score: 0
+       }
+    });
+
+    // start summing up the totals for each duplicate obj
+    data.forEach((elem) => {
+        // inner loop
+        dataArr.forEach((el) => {
+            if(el.team === elem.team) {
+                el.score += elem.score;
+            }
+        });
+    });
+
+    dataArr.sort((a,b) => b.score-a.score);
+
+    return dataArr;
+}
+
+function objectReduceSumTotal(data) {
+
+}
+
+
+
+//#endregion //-- object reduce sum total --\\
 
 
 //#region debugPrac
