@@ -201,6 +201,16 @@ function electionWinner2(votes) {
 
     return peopleWithMostVotes.sort()[peopleWithMostVotes.length-1];
 }
+
+// electionWinner3(votes);
+function electionWinner3(votes) {
+    let votesCount = votes.reduce((acc, elem, idx, arr) => {
+        if(acc.hasOwnProperty(elem)) acc[elem]++;
+        else acc[elem] = 1;
+        return acc;
+    }, {});
+    return votesCount;
+}
 //#endregion electionVoteAlgorithm
 
 //#region //-- random array algorithm prac --\\
@@ -335,20 +345,19 @@ let dataSet2 = {
 
 // get dataSet1 to reduce team duplicates to something like:
 // [{team: 'o', score: totalScore}, {team: 'a', score: totalScore}...] & sort by team w/highest score at top
-console.log("objectSetSumTotal(dataSet1) = ");
-console.log(objectSetSumTotal(dataSet1));
+objectSetSumTotal(dataSet1);
 function objectSetSumTotal(data) {
-    let dataArr = [], dataArrObjVals = {}, count = 0;
+    let dataArr = [];
+    let count = 0;
     let jset = new Set();
 
-    // get rid of the duplicatates
-    for (var i = 0; i < data.length; i++) {
-        var obj = data[i];
-        jset.add(obj.team);
+    // get rid of the duplicates
+    for (let i = 0; i < data.length; i++) {
+        jset.add(data[i].team);
     }
 
     // create an array w/non duplicates of data team prop vals
-    var jsetVals = [];
+    let jsetVals = [];
     jset.forEach(function(v1){
         jsetVals[count++] = v1;
     });
@@ -371,16 +380,13 @@ function objectSetSumTotal(data) {
         });
     });
 
-    dataArr.sort((a,b) => b.score-a.score);
-
-    return dataArr;
+    return dataArr.sort((a,b) => b.score-a.score);
 }
 
+objectReduceSumTotal(dataSet1);
 function objectReduceSumTotal(data) {
 
 }
-
-
 
 //#endregion //-- object reduce sum total --\\
 
