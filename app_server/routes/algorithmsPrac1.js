@@ -405,7 +405,7 @@ function stairCase(n) {
     }
 }
 
-console.log("minmax = " + minmax([1, 2, 3, 4, 5]).toString());
+// console.log("minmax = " + minmax([1, 2, 3, 4, 5]).toString());
 function minmax(arr) {
     let tempArr = [];
     arr.forEach((e1, idx, arr) => {
@@ -416,6 +416,30 @@ function minmax(arr) {
         }, 0);
     });
     return `${Math.min(...tempArr)} ${Math.max(...tempArr)}`;
+}
+
+console.log("timeConverstion('07:05:45PM') = " + timeConverstion("07:05:45PM"));
+console.log();
+console.log("timeConverstion('20:05:45PM') = " + timeConverstion("10:05:45PM"));
+function timeConverstion(s) {
+    let timeArr = s.split(":");
+    for (let i = 0; i < timeArr.length; i++) {
+        if (timeArr[i].includes("M")) {
+            timeArr[i] = timeArr[i].replace(/PM|AM/i, "");
+            timeArr[i] = parseInt(timeArr[i], 10);
+        } else {
+            timeArr[i] = parseInt(timeArr[i], 10);
+        }
+    }
+    let militaryTime = timeArr[0] + 12;
+    if (militaryTime > 24) {
+        console.log("militaryTime = "+militaryTime);
+        let temp = 23 - timeArr[0];
+        timeArr[0] = 12 - temp;
+    } else {
+        timeArr[0] += 12;
+    }
+    return timeArr.join(":");
 }
 
 
