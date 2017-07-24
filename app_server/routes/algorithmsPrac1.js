@@ -193,19 +193,19 @@ function electionWinner2(votes) {
     // put the people with the most votes into their own array
     let highestVote = Math.max(...numberOfVotes);
     let peopleWithMostVotes = [];
-    for(let prop in votesSum) {
+    for (let prop in votesSum) {
         if (votesSum[prop] === highestVote) {
             peopleWithMostVotes[count++] = prop;
         }
     }
 
-    return peopleWithMostVotes.sort()[peopleWithMostVotes.length-1];
+    return peopleWithMostVotes.sort()[peopleWithMostVotes.length - 1];
 }
 
 // electionWinner3(votes);
 function electionWinner3(votes) {
     let votesCount = votes.reduce((acc, elem, idx, arr) => {
-        if(acc.hasOwnProperty(elem)) acc[elem]++;
+        if (acc.hasOwnProperty(elem)) acc[elem]++;
         else acc[elem] = 1;
         return acc;
     }, {});
@@ -334,7 +334,7 @@ let dataSet1 = [
     {team: 'alpha', score: 5},
 ];
 let dataSet2 = {
-    prop1:  {team: 'omicron', score: 7},
+    prop1: {team: 'omicron', score: 7},
     prop2: {team: 'bravo', score: 8},
     prop3: {team: 'alpha', score: 2},
     prop4: {team: 'omicron', score: 4},
@@ -358,29 +358,29 @@ function objectSetSumTotal(data) {
 
     // create an array w/non duplicates of data team prop vals
     let jsetVals = [];
-    jset.forEach(function(v1){
+    jset.forEach(function (v1) {
         jsetVals[count++] = v1;
     });
 
     // create an array of complex objects w/identical props as 'data'
-    jsetVals.forEach(function(elem, idx){
-       dataArr[idx] = {
-           team: elem,
-           score: 0
-       }
+    jsetVals.forEach(function (elem, idx) {
+        dataArr[idx] = {
+            team: elem,
+            score: 0
+        }
     });
 
     // start summing up the totals for each duplicate obj
     data.forEach((elem) => {
         // inner loop
         dataArr.forEach((el) => {
-            if(el.team === elem.team) {
+            if (el.team === elem.team) {
                 el.score += elem.score;
             }
         });
     });
 
-    return dataArr.sort((a,b) => b.score-a.score);
+    return dataArr.sort((a, b) => b.score - a.score);
 }
 
 objectReduceSumTotal(dataSet1);
@@ -389,6 +389,34 @@ function objectReduceSumTotal(data) {
 }
 
 //#endregion //-- object reduce sum total --\\
+
+// console.log("fibonacci() = "+fibonacci(6));
+function fibonacci(num) {
+    if (num === 1 || num === 2) return 1;
+    return fibonacci(num - 1) + fibonacci(num - 2)
+}
+
+function stairCase(n) {
+    let num = n;
+    for (let i = 0; i <= n; i++) {
+        let stairs = "#".repeat(i);
+        let spaces = " ".repeat(num--);
+        if (stairs) console.log(spaces + stairs);
+    }
+}
+
+console.log("minmax = " + minmax([1, 2, 3, 4, 5]).toString());
+function minmax(arr) {
+    let tempArr = [];
+    arr.forEach((e1, idx, arr) => {
+        tempArr[idx] = arr.reduce((accum, elem, idx, arrRef) => {
+            if (e1 === arrRef[idx]) accum += 0;
+            else accum += elem;
+            return accum;
+        }, 0);
+    });
+    return `${Math.min(...tempArr)} ${Math.max(...tempArr)}`;
+}
 
 
 //#region debugPrac
