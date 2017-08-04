@@ -280,9 +280,21 @@ function binarySearch(arr, elem, start = 0, end = arr.length - 1) {
         : elem < arr[mid] ? binarySearch(arr, elem, start, mid-1)
             : binarySearch(arr, elem, mid+1, end);
 }
-
-function repeatedItem() {
-
+function repeatedItemLoop(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i+1; j < arr.length; j++) {
+            if (arr[j] === arr[i]) return i;
+        }
+    }
+    return -1; // no repetition
+}
+function repeatedItemSet(arr) {
+    let myset = new Set();
+    for(const v of arr) {
+        if(myset.has(v)) return v;
+        else myset.add(v);
+    }
+    return -1; // no repetition
 }
 //#endregion
 
