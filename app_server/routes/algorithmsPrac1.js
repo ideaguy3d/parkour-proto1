@@ -8,7 +8,6 @@ console.log("in 'algorithmsPrac1.js' file");
 console.log();
 console.log();
 //#region //-- array left shift operation --\\
-
 function readLine() {
     return "5 4";
 }
@@ -40,7 +39,6 @@ function mainLeftShift() {
 //#endregion
 
 //#region //-- Adding sum of an array --\\
-
 function jSum(size, ar) {
     return ar.reduce(function (sum, val) {
         return sum + val
@@ -57,12 +55,11 @@ function jSumMain() {
     console.log("jSumMain = ");
     console.log(jSum(s, ao));
 }
-// jSumMain();
 
 //#endregion
 
 //#region //-- matrix diagonal difference --\\
-
+// diagDiff();
 function diagDiff() {
     let a = [[11, 2, 4], [4, 5, 6], [10, 8, -12]];
 
@@ -84,8 +81,6 @@ function diagDiff() {
     console.log("diagonal diff = ");
     console.log(ans < 0 ? ans * -1 : ans);
 }
-// diagDiff();
-
 //#endregion
 
 //#region //-- vote question --\\
@@ -153,7 +148,6 @@ function electionWinner(votes) {
     console.log("jsort = ");
     console.log(jsort);
 } // END OF: electionWinner()
-
 function electionWinner2(votes) {
     //-- get rid of duplicates:
     const SetStruct = function () {
@@ -201,8 +195,6 @@ function electionWinner2(votes) {
 
     return peopleWithMostVotes.sort()[peopleWithMostVotes.length - 1];
 }
-
-// electionWinner3(votes);
 function electionWinner3(votes) {
     let votesCount = votes.reduce((acc, elem, idx, arr) => {
         if (acc.hasOwnProperty(elem)) acc[elem]++;
@@ -222,7 +214,7 @@ let testArrays = {
     a4: [3, 3, 3],
     a5: [1, 1, 2, 2, 1]
 };
-// for (let k in testArrays) {console.log(pl + `TEST: firstDuplicate(${k}) = ${firstDuplicate(testArrays[k])}`);}
+//for (let k in testArrays) {console.log(pl + `TEST: firstDuplicate(${k}) = ${firstDuplicate(testArrays[k])}`);}
 function firstDuplicate(a) {
     let storedIdxArr = [],
         storedIdxObj = {},
@@ -272,53 +264,25 @@ function firstDuplicate(a) {
             return parseInt(storedIdxObjKeysArr[0]);
         }
     }
-    return returnVal;
+
 }
 
-function firstDuplicate1011(a) { // 1011 for 10/11 tests pass
-    let storedIdxArr = [],
-        storedIdxObj = {},
-        minVal;
-    let returnVal,
-        atLeastOneDuplicate = false;
+// console.log("elem in arr is === " + binarySearch([2, 3, 4, 9, 3, 1, 19, 5, 2], 9));
+/*
+ * @returns: index of element if found
+ * */
+function binarySearch(arr, elem, start = 0, end = arr.length - 1) {
+    arr.sort((a,b) => a-b);
+    console.log(arr);
+    if(end < start) return -1;
+    const mid = Math.floor((start+end)/2);
+    return elem === arr[mid] ? mid
+        : elem < arr[mid] ? binarySearch(arr, elem, start, mid-1)
+            : binarySearch(arr, elem, mid+1, end);
+}
 
-    a.forEach(function (elem, idx, arr) {
-        let ahead = idx + 1,
-            curr = arr[idx],
-            dc = arr.includes(curr, ahead);
+function repeatedItem() {
 
-        if (dc) {
-            atLeastOneDuplicate = true;
-            storedIdxArr[idx] = arr.indexOf(curr, ahead);
-            storedIdxObj[curr] = arr.indexOf(curr, ahead);
-        } else if (!atLeastOneDuplicate && (idx === (arr.length - 1))) {
-            returnVal = null;
-        }
-    });
-
-    minVal = Math.min(...storedIdxArr);
-
-    if (!returnVal && !atLeastOneDuplicate) {
-        return -1;
-    }
-    else {
-        let storedIdxObjKeysArr = Object.keys(storedIdxObj);
-        if (storedIdxObjKeysArr.length > 1) {
-            let propCount = 0;
-            let objSize = Object.keys(storedIdxObj).length;
-            for (let prop in storedIdxObj) {
-                propCount++;
-                if (storedIdxObj[prop] === minVal) {
-                    returnVal = parseInt(prop);
-                } else if (!returnVal && (objSize === propCount)) {
-                    return -1;
-                }
-            }
-        } else {
-            return parseInt(storedIdxObjKeysArr[0]);
-        }
-    }
-    return returnVal;
 }
 //#endregion
 
@@ -350,18 +314,16 @@ function objectSetSumTotal(data) {
     let dataArr = [];
     let count = 0;
     let jset = new Set();
-
     // get rid of the duplicates
     for (let i = 0; i < data.length; i++) {
         jset.add(data[i].team);
     }
-
     // create an array w/non duplicates of data team prop vals
+    // basically converting the set to an array.
     let jsetVals = [];
     jset.forEach(function (v1) {
         jsetVals[count++] = v1;
     });
-
     // create an array of complex objects w/identical props as 'data'
     jsetVals.forEach(function (elem, idx) {
         dataArr[idx] = {
@@ -369,7 +331,6 @@ function objectSetSumTotal(data) {
             score: 0
         }
     });
-
     // start summing up the totals for each duplicate obj
     data.forEach((elem) => {
         // inner loop
@@ -379,7 +340,6 @@ function objectSetSumTotal(data) {
             }
         });
     });
-
     return dataArr.sort((a, b) => b.score - a.score);
 }
 
@@ -418,9 +378,9 @@ function minmax(arr) {
     return `${Math.min(...tempArr)} ${Math.max(...tempArr)}`;
 }
 
-console.log("timeConverstion('07:05:45PM') = " + timeConverstion("07:05:45PM"));
-console.log();
-console.log("timeConverstion('20:05:45PM') = " + timeConverstion("10:05:45PM"));
+// console.log("timeConverstion('07:05:45PM') = " + timeConverstion("07:05:45PM"));
+// console.log();
+// console.log("timeConverstion('10:05:45PM') = " + timeConverstion("10:05:45PM"));
 function timeConverstion(s) {
     let timeArr = s.split(":");
     for (let i = 0; i < timeArr.length; i++) {
@@ -433,7 +393,7 @@ function timeConverstion(s) {
     }
     let militaryTime = timeArr[0] + 12;
     if (militaryTime > 24) {
-        console.log("militaryTime = "+militaryTime);
+        console.log("militaryTime = " + militaryTime);
         let temp = 23 - timeArr[0];
         timeArr[0] = 12 - temp;
     } else {
