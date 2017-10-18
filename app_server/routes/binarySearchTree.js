@@ -17,6 +17,7 @@ function BinarySearchTreeClass() {
         this.left = null;
         this.right = null;
     };
+
     var root = null;
 
     this.insert = function (key) {

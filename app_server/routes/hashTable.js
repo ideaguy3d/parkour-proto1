@@ -9,6 +9,7 @@ function dash() {
     console.log("----------------------------------------------------------------");
     console.log();
 }
+
 function HashTableClass() {
     var table = [];
 
@@ -22,7 +23,7 @@ function HashTableClass() {
 
     this.put = function (key, value) {
         var pos = primeHashCode(key);
-        console.log(pl+pl+key+' - '+pos);
+        console.log(pl+pl+key+' transformed to '+pos);
         if (table[pos] === undefined) {
             table[pos] = new ValuePairStruct(key, value);
         } else {
@@ -118,6 +119,7 @@ function hashTableTest() {
     hash.remove('jar');
     console.log(pl + hash.get('jar'));
 }
+
 function testHash2() {
     var hash = new HashTableClass();
 
@@ -139,10 +141,13 @@ function testHash2() {
     hash.put('voo', 'vanessa@mail.com');
     hash.put('jar', 'jessica@mail.com');
 
-    console.log(pl+"hash.get('Paul') = ");
-    console.log(pl+hash.get(' Paul'));
-    console.log("hash.remove('voo') = "+hash.remove('_voo'));
+    console.log(pl+"hash.get('Paul') = "+hash.get(' Paul'));
+
+    console.log(pl+"hash.remove('voo') = "+hash.remove('_voo'));
 }
-// hashTableTest();
-// testHash2();
+
+hashTableTest();
+dash();
+testHash2();
+
 dash();
