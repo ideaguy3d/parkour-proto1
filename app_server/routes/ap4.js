@@ -8,7 +8,7 @@
  Given a string s, find and return the first instance of a non-repeating character in it.
  If there is no such character, return '_'.
  **/
-let case1 = "abacabadjabacabad";
+let case1 = "abacabajdabacabad";
 function firstNonRepeatedChar(s) {
     let zArr = [];
     for (let i = 0; i < s.length; i++) {
@@ -16,14 +16,18 @@ function firstNonRepeatedChar(s) {
     }
 
     let val = "_";
-    zArr.forEach(function (e, i) {
-        if (zArr.indexOf(e, i + 1) === -1) {
-            console.log(" - "+e);
-            val = e;
-            return;
+    let tArr = [];
+    for (let i = 0; i < zArr.length; i++) {
+        let cv = zArr[i];
+        if (zArr.indexOf(cv, i + 1) === -1) {
+            if(tArr.indexOf(cv) > -1) { // curVal is in tracker array
+                break;
+            }
+            val = cv;
         }
-    });
+        tArr[i] = cv;
+    }
     return val;
 }
-console.log("firstNonRepeatedChar");
-console.log(firstNonRepeatedChar(case1));
+console.log(" ---- firstNonRepeatedChar ---- ");
+console.log("\n {{ " + firstNonRepeatedChar(case1) + " }}");

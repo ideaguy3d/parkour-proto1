@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e7b624a-6d48-4c60-82ce-f375fd775911" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_server/routes/ap4.js" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/prac/index.html" afterPath="" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/prac/prac1.js" afterPath="$PROJECT_DIR$/app_server/routes/algoPrac3.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_server/routes/algorithmsPrac1.js" afterPath="$PROJECT_DIR$/app_server/routes/algorithmsPrac1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_server/routes/ap4.js" afterPath="$PROJECT_DIR$/app_server/routes/ap4.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_server/routes/binarySearchTree.js" afterPath="$PROJECT_DIR$/app_server/routes/binarySearchTree.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_server/routes/set.js" afterPath="$PROJECT_DIR$/app_server/routes/set.js" />
     </list>
@@ -96,11 +96,12 @@
           <file leaf-file-name="ap4.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app_server/routes/ap4.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="580">
-                  <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+                <state relative-caret-position="648">
+                  <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#104#246#0" expanded="true" />
+                    <element signature="n#!!block;n#firstNonRepeatedChar#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -133,9 +134,11 @@
       <find>479</find>
       <find>875</find>
       <find>TEST:</find>
+      <find>zArr[i]</find>
     </findStrings>
     <replaceStrings>
       <replace>timeArr[i]</replace>
+      <replace>cv</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -338,7 +341,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.algorithmsPrac2.js">
+  <component name="RunManager" selected="Node.js.ap4.js">
     <configuration default="false" name="algorithmsPrac1.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="algorithmsPrac1.js" working-dir="$PROJECT_DIR$/app_server/routes">
       <method />
     </configuration>
@@ -346,6 +349,9 @@
       <method />
     </configuration>
     <configuration default="false" name="algorithmsPrac2.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="algorithmsPrac2.js" working-dir="$PROJECT_DIR$/app_server/routes">
+      <method />
+    </configuration>
+    <configuration default="false" name="ap4.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="ap4.js" working-dir="$PROJECT_DIR$/app_server/routes">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -414,16 +420,18 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Node.js.algorithmsPrac1.js" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.hashTable.js" />
       <item index="2" class="java.lang.String" itemvalue="Node.js.algorithmsPrac2.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.ap4.js" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.algorithmsPrac2.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.hashTable.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.algorithmsPrac1.js" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.ap4.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.algorithmsPrac2.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.hashTable.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.algorithmsPrac1.js" />
       </list>
     </recent_temporary>
   </component>
@@ -478,12 +486,12 @@
       <workItem from="1511104405515" duration="3842000" />
       <workItem from="1511237018773" duration="545000" />
       <workItem from="1512321072338" duration="2876000" />
-      <workItem from="1512861004768" duration="8751000" />
+      <workItem from="1512861004768" duration="11601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135749000" />
+    <option name="totallyTimeSpent" value="138599000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -508,7 +516,7 @@
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1433902" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.54672897" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42505354" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="1923" y="124" width="1422" height="929" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="0.37152034" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="1934" y="46" width="1422" height="993" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -556,11 +564,12 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="51" />
+      <option name="time" value="53" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
-        <watch expression="a" />
+        <watch expression="cv" />
+        <watch expression="tArr" />
       </configuration>
     </watches-manager>
   </component>
@@ -850,24 +859,24 @@
         <state relative-caret-position="238">
           <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
           <folding>
-            <element signature="e#0#51#0" expanded="true" />
-            <element signature="n#!!block;n#dash#0" expanded="true" />
-            <element signature="e#571#780#0" expanded="true" />
-            <element signature="e#816#940#0" expanded="true" />
-            <element signature="e#972#999#0" expanded="true" />
-            <element signature="e#1030#1079#0" expanded="true" />
-            <element signature="e#1112#1154#0" expanded="true" />
-            <element signature="e#1194#1558#0" expanded="true" />
-            <element signature="e#1603#1877#0" expanded="true" />
-            <element signature="e#1920#2169#0" expanded="true" />
-            <element signature="e#2208#2515#0" expanded="true" />
-            <element signature="e#2540#2572#0" expanded="true" />
-            <element signature="n#!!block;n#unionSetTest#0" expanded="true" />
-            <element signature="n#!!block;n#intersectionSetTest#0" expanded="true" />
-            <element signature="n#!!block;n#differenceSetTest#0" expanded="true" />
-            <element signature="n#!!block;n#subsetSetTest#0" expanded="true" />
-            <element signature="e#4349#4413#0" expanded="true" />
-            <element signature="e#4462#4692#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="false" />
+            <element signature="n#!!block;n#dash#0" expanded="false" />
+            <element signature="e#571#780#0" expanded="false" />
+            <element signature="e#816#940#0" expanded="false" />
+            <element signature="e#972#999#0" expanded="false" />
+            <element signature="e#1030#1079#0" expanded="false" />
+            <element signature="e#1112#1154#0" expanded="false" />
+            <element signature="e#1194#1558#0" expanded="false" />
+            <element signature="e#1603#1877#0" expanded="false" />
+            <element signature="e#1920#2169#0" expanded="false" />
+            <element signature="e#2208#2515#0" expanded="false" />
+            <element signature="e#2540#2572#0" expanded="false" />
+            <element signature="n#!!block;n#unionSetTest#0" expanded="false" />
+            <element signature="n#!!block;n#intersectionSetTest#0" expanded="false" />
+            <element signature="n#!!block;n#differenceSetTest#0" expanded="false" />
+            <element signature="n#!!block;n#subsetSetTest#0" expanded="false" />
+            <element signature="e#4349#4413#0" expanded="false" />
+            <element signature="e#4462#4692#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -922,11 +931,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_server/routes/ap4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="648">
+          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#104#246#0" expanded="true" />
+            <element signature="n#!!block;n#firstNonRepeatedChar#0" expanded="true" />
           </folding>
         </state>
       </provider>
