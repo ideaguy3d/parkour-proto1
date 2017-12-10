@@ -16,11 +16,9 @@ var users = require('./app_server/routes/users');
  ----------------------------- Data Structure and Algorithm includes -----------------------------
  *****************************************************************************************************/
 var baseRoute = "./app_server/routes/";
-// var set = require('./app_server/routes/set');
-// var map = require('./app_server/routes/map');
-// var hashTable = require('./app_server/routes/hashTable');
-// var binarySearchTree = require('./app_server/routes/binarySearchTree');
-var prac1 = require(baseRoute + 'algorithmsPrac1');
+require(baseRoute + 'ap4');
+
+// initialize express app
 var app = express();
 
 // view engine setup

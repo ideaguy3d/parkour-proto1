@@ -148,6 +148,10 @@ function electionWinner(votes) {
     console.log("jsort = ");
     console.log(jsort);
 } // END OF: electionWinner()
+console.log();
+console.log(" ---- electionWinner ---- ");
+electionWinner(votes);
+
 function electionWinner2(votes) {
     //-- get rid of duplicates:
     const SetStruct = function () {
@@ -195,14 +199,21 @@ function electionWinner2(votes) {
 
     return peopleWithMostVotes.sort()[peopleWithMostVotes.length - 1];
 }
+console.log(); console.log();
+console.log(" --- electionWinner2() ---- \n");
+console.log(electionWinner2(votes));
+
 function electionWinner3(votes) {
-    let votesCount = votes.reduce((acc, elem, idx, arr) => {
+    return votes.reduce((acc, elem, idx, arr) => {
         if (acc.hasOwnProperty(elem)) acc[elem]++;
         else acc[elem] = 1;
         return acc;
     }, {});
-    return votesCount;
 }
+console.log(); console.log();
+console.log(" --- electionWinner3() ---- \n");
+console.log(electionWinner3(votes));
+
 //#endregion electionVoteAlgorithm
 
 //#region //-- random array algorithm prac --\\

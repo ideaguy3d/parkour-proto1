@@ -15,7 +15,7 @@ function dash() {
 }
 
 function SetClass() {
-    var items = {};
+    let items = {};
 
     this.has = function (val) {
         return items.hasOwnProperty(val);
